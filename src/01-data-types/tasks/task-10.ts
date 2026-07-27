@@ -16,3 +16,4 @@
  * 2. Store the product data in a single collection.
  * 3. Display the product data using console.log.
  */
+

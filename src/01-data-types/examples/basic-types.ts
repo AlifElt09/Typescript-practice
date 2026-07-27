@@ -22,7 +22,6 @@ enum Grade {
   B = "Good",
   C = "Average",
 }
-
 // Any — avoid when possible; use when type is truly unknown
 let flexibleValue: any = "hello";
 flexibleValue = 42;
