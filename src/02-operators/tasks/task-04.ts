@@ -23,3 +23,20 @@
 
  */
 
+const MechanicalKeyboard : number = 850000
+const WirelessMouse : number = 275000
+const MousePad : number = 120000 
+
+let Quantity = {MechanicalKeyboard:1, WirelessMouse:2, MousePad:1}
+
+const TotalPurchased = Quantity.MechanicalKeyboard + Quantity.WirelessMouse + Quantity.MousePad
+const Subtotal = MechanicalKeyboard + WirelessMouse*Quantity.WirelessMouse + MousePad
+const Discount = Subtotal>1000000 ? 10/100*Subtotal : 0
+const FinalPrice = Subtotal - Discount
+
+
+
+console.log("=== Final Payment Order ===")
+console.log("Total Purchased",TotalPurchased)
+console.log("Subtotal",Subtotal)
+console.log("Final Price",FinalPrice)
