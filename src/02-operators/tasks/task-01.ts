@@ -14,3 +14,15 @@
  *  - Final payment
  * 2. Display the calculation results.
  */
+
+const FreadRiceMealsPrice: number = 18000;
+const MineralWaterPrice: number = 5000;
+
+const Totalprice = FreadRiceMealsPrice*3 + MineralWaterPrice*2;
+
+
+const DiscountPrice = {
+  PriceAfterDiscount: Totalprice - 10000
+}
+
+console.log(DiscountPrice)

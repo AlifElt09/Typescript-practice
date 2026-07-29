@@ -9,7 +9,7 @@
  * 
  * display the attendance data using console.log.
  */
-const enum AttendanceStatus {
+enum AttendanceStatus {
     Present = "Present",
     Absent = "Absent",
 }
