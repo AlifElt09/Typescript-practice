@@ -33,3 +33,25 @@
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
  */
+
+type StudentData = {StudentName:string, GPA:number, FamilyIncome:number, CompetitionRecord:number, HasDisciplinaryRecord:boolean, DocumentComplete:boolean}
+
+const Student1:StudentData = {
+  StudentName:"Alya Putri",
+  GPA:3.89,
+  FamilyIncome:4200000,
+  CompetitionRecord:4,
+  HasDisciplinaryRecord:false,
+  DocumentComplete:true
+}
+
+const ScholarshipRequirement: number = Student1.GPA >= 3.75 && Student1.FamilyIncome < 5000000 && Student1.CompetitionRecord >= 3 && !Student1.HasDisciplinaryRecord
+&& Student1.DocumentComplete ? 12000000 : 0;
+const RemainingScholarshipBudget: number = 500000000 - ScholarshipRequirement;
+
+let ScholarshipStatus: string = ScholarshipRequirement > 0 ? "Accepted" : "Not Accepted";
+
+let SchollarshipStudentData = {
+    Student1,ScholarshipRequirement,RemainingScholarshipBudget,ScholarshipStatus:ScholarshipStatus
+}
+console.log(SchollarshipStudentData);

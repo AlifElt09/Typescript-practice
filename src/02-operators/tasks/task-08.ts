@@ -24,3 +24,21 @@
  * - Final bill
  * - Green Energy Program eligibility
  */
+
+
+type HouseMonitoring = {
+    previousMeter: number;
+    currentMeter: number;
+    electricityPricePerKWh: number;
+    solarPanelInstalled: boolean;
+    energySavingMode: boolean;
+}
+
+const houseMonitoring: HouseMonitoring = {
+    previousMeter: 25640,
+    currentMeter: 25892,
+    electricityPricePerKWh: 1650,
+    solarPanelInstalled: true,
+    energySavingMode: false,
+}
+

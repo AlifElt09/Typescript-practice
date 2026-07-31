@@ -14,3 +14,23 @@
  * 3. Display the evaluation result. If eligible will display "Bonus Approved", 
  * otherwise display "Bonus not approved"
  */
+
+type EmployeeRecord = {
+  EmployeeName : string,
+  PerformanceScore : number
+}
+
+const Employee1 : EmployeeRecord = {
+  EmployeeName : "Dimas Pratama",
+  PerformanceScore : 78
+}
+
+console.log("=== Employee Evaluation ===")
+console.log("Employee Name" ,Employee1.EmployeeName)
+console.log("Employee Score" ,Employee1.PerformanceScore)
+
+if (Employee1.PerformanceScore>=80)  {
+  console.log ("Bonus approved")
+} else {
+  console.log("Bonus not approved")
+}

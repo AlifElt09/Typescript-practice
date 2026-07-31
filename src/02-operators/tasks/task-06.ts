@@ -1,3 +1,5 @@
+
+
 /**
  * An internet café charges customers Rp8,000 per hour. 
  * Customers are billed for every started hour. If the total playing time exceeds 5 hours, they receive a 15% discount.
