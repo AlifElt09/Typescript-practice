@@ -16,6 +16,9 @@
 
  */
 
+
+console.log("=== Attendance Verification ===");
+
 for (let i = 1; i <= 30; i++) {
   console.log(`Checking attendance for Student #${i}`);
 }
