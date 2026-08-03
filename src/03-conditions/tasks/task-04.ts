@@ -22,3 +22,16 @@
  * 2. Implement the logic using nested if statements.
  * 3. Display the reservation result.
  */
+
+type CustomerFormat = {
+  CustomerName : string,
+  PremiumMember : boolean,
+}
+
+const CustomerRevervation : CustomerFormat = {
+  CustomerName : "Nadia Putri",
+  PremiumMember : true,
+}
+
+const roomAvailable : boolean = false; 
+
