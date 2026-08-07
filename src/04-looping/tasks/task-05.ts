@@ -24,3 +24,27 @@ const scores = [
     67, 79, 94, 83, 71,
     96, 65, 87, 74, 90
 ];
+let goldmedal = 0, silvermedal = 0, bronzemedal = 0, nomedal = 0,totalscore = 0
+
+scores.forEach( score => {
+  if(score>=95) {
+    goldmedal++
+  } else if (score>=85) {
+    silvermedal++
+  } else if (score>=75) {
+    bronzemedal++
+  } else {
+    nomedal++
+  }
+  totalscore += score
+  }
+)
+
+const averageScore = totalscore / scores.length;
+
+console.log("=== Student achivement ===")
+console.log("Student with gold medal : "+goldmedal)
+console.log("Student with silver medal : "+silvermedal)
+console.log("Student with bronze medal : "+bronzemedal)
+console.log("Student with no medal : "+nomedal)
+console.log("Average student Scores : "+averageScore)

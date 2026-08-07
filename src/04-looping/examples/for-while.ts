@@ -28,7 +28,7 @@ do {
 
 // for...of — iterate over array values
 console.log("\n=== for...of ===");
-const fruits = ["apple", "banana", "cherry"];
+const fruits = ["apple", "banana","orange"];
 for (const fruit of fruits) {
   console.log(fruit);
 }
