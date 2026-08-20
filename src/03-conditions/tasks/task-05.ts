@@ -32,3 +32,14 @@
  *  - Implement the second screening only if the first screening is passed.
  *  - Display the correct result.
  */
+
+const studentname = [
+    {studentname: "Fajar Hidayat",
+    gpa: 3.86,
+    familyincome: 4200000,
+    competitioncount: 4,
+    hasdisciplinaryrecord: "No",
+    documentcomplete: "Yes"}
+]
+
+

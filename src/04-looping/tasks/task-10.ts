@@ -26,3 +26,22 @@ const submissions = [
     { student: "Hana", submitted: true, score: 73 }
 ];
 
+let totalSubmitted = 0, totalNotSubmitted = 0, totalPassed = 0, totalRevision = 0
+
+submissions.forEach(submission => {
+    if(submission.submitted) {
+        totalSubmitted++
+        if(submission.score >= 75) {
+            totalPassed++
+        } else {
+            totalRevision++
+        }
+    } else {
+        totalNotSubmitted++
+    }
+})
+
+console.log(totalSubmitted)
+console.log(totalNotSubmitted)
+console.log(totalPassed)
+console.log(totalRevision)
