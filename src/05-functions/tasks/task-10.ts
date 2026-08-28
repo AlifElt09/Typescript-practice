@@ -33,62 +33,62 @@
  * - Use meaningful function names and parameters
  * Reuse existing functions whenever possible
  */
+type enrollment = {student:string,course:string,completed:boolean,score:number,duration:number}
 
-const enrollments = [
-    {
-        student: "Alya",
-        course: "TypeScript",
-        completed: true,
-        score: 91,
-        duration: 38
-    },
-    {
-        student: "Budi",
-        course: "TypeScript",
-        completed: false,
-        score: 45,
-        duration: 12
-    },
-    {
-        student: "Citra",
-        course: "Database",
-        completed: true,
-        score: 87,
-        duration: 42
-    },
-    {
-        student: "Dimas",
-        course: "Backend",
-        completed: true,
-        score: 96,
-        duration: 40
-    },
-    {
-        student: "Eka",
-        course: "Database",
-        completed: false,
-        score: 60,
-        duration: 18
-    },
-    {
-        student: "Fajar",
-        course: "Backend",
-        completed: true,
-        score: 82,
-        duration: 35
-    },
-    {
-        student: "Gita",
-        course: "TypeScript",
-        completed: true,
-        score: 88,
-        duration: 36
-    },
-    {
-        student: "Hana",
-        course: "Backend",
-        completed: false,
-        score: 70,
-        duration: 20
-    }
+const enrollments:enrollment[] = [
+    {student: "Alya",course: "TypeScript",completed: true,score: 91,duration: 38},
+    {student: "Budi",course: "TypeScript",completed: false,score: 45,duration: 12},
+    {student: "Citra",course: "Database",completed: true,score: 87,duration: 42},
+    {student: "Dimas",course: "Backend",completed: true,score: 96,duration: 40},
+    {student: "Eka",course: "Database",completed: false,score: 60,duration: 18},
+    {student: "Fajar",course: "Backend",completed: true,score: 82,duration: 35},
+    {student: "Gita",course: "TypeScript",completed: true,score: 88,duration: 36},
+    {student: "Hana",course: "Backend",completed: false,score: 70,duration: 20}
 ];
+
+function totalEnrollments (enrollment:enrollment[]) {
+    
+}
+function completedEnrollment (enrollment:enrollment[]) {
+    
+}
+
+function incompleteEnrollment (enrollment:enrollment[]) {
+    
+}
+
+function completionPercentage (enrollment:enrollment[]) {
+    
+}
+
+function highestScore (enrollment:enrollment[]) {
+    
+}
+
+function lowestScore (enrollment:enrollment[]) {
+    
+}
+
+function averageScore (enrollment:enrollment[]) {
+    
+}
+
+function studentsWithPassingScores (enrollment:enrollment[]) {
+    
+}
+
+function numberOfStudentsInEachCourse (enrollment:enrollment[]) {
+    
+}
+
+function averageScoreForEachCourse (enrollment:enrollment[]) {
+    
+}
+
+function totalLearningHours (enrollment:enrollment[]) {
+    
+}
+
+function averageLearningDuration (enrollment:enrollment[]) {
+    
+}

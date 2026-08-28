@@ -22,44 +22,9 @@
  * - No duplicated calculations.
  */
 const patients = [
-    {
-        id: "PT001",
-        name: "Alya",
-        age: 17,
-        department: "Pediatrics",
-        admitted: true,
-        bill: 850000
-    },
-    {
-        id: "PT002",
-        name: "Budi",
-        age: 45,
-        department: "Cardiology",
-        admitted: false,
-        bill: 1200000
-    },
-    {
-        id: "PT003",
-        name: "Citra",
-        age: 68,
-        department: "Cardiology",
-        admitted: true,
-        bill: 2500000
-    },
-    {
-        id: "PT004",
-        name: "Dimas",
-        age: 33,
-        department: "Orthopedics",
-        admitted: true,
-        bill: 640000
-    },
-    {
-        id: "PT005",
-        name: "Eka",
-        age: 14,
-        department: "Pediatrics",
-        admitted: false,
-        bill: 350000
-    }
+    {id: "PT001",name: "Alya",age: 17,department: "Pediatrics",admitted: true,bill: 850000},
+    {id: "PT002",name: "Budi",age: 45,department: "Cardiology",admitted: false,bill: 1200000},
+    {id: "PT003",name: "Citra",age: 68,department: "Cardiology",admitted: true,bill: 2500000},
+    {id: "PT004",name: "Dimas",age: 33,department: "Orthopedics",admitted: true,bill: 640000},
+    {id: "PT005",name: "Eka",age: 14,department: "Pediatrics",admitted: false,bill: 350000}
 ];

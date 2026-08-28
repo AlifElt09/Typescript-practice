@@ -18,3 +18,14 @@ const prices = [
     420000,
     125000
 ];
+
+
+function calculateTotalPrice(prices:number[]):number {
+    let totalprice = 0
+    prices.forEach ( price =>{
+        totalprice += price
+    })
+    return totalprice
+}
+
+console.log(calculateTotalPrice(prices))

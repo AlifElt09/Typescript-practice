@@ -21,3 +21,28 @@ const products = [
  * 
  * Instead of creating a separate loop for every operation, the developer creates a reusable processing function.
  */
+
+function displayProducts(products: any[]) {
+    products.forEach((product: any) => console.log(`${product.name} - Rp${product.price}`));
+}
+
+function displayExpensiveProducts(products: any[]) {
+    products.forEach((product: any) => {
+        if (product.price > 1000000) {
+            console.log(`${product.name} - Rp${product.price}`);
+        }
+    });
+}
+
+function displayDiscountedProducts(products: any[]) {
+    products.forEach((product: any) => {
+        if (product.price > 500000) {
+            const discountPrice = product.price * 0.9;
+            console.log(`${product.name} - Rp${discountPrice}`);
+        }
+    });
+}
+
+displayProducts(products);
+displayExpensiveProducts(products);
+displayDiscountedProducts(products);

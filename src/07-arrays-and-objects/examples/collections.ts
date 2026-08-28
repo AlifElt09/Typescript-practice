@@ -10,7 +10,7 @@ const numbers = [1, 2, 3, 4, 5];
 console.log("=== Array Methods ===");
 console.log("map (double):", numbers.map((n) => n * 2));
 console.log("filter (even):", numbers.filter((n) => n % 2 === 0));
-console.log("reduce (sum):", numbers.reduce((sum, n) => sum + n, 0));
+console.log("reduce (sum):", numbers.reduce((alif, n) => alif + n, 0));
 console.log("find (>3):", numbers.find((n) => n > 3));
 console.log("includes(3):", numbers.includes(3));
 

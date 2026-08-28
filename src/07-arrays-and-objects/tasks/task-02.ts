@@ -9,39 +9,25 @@
  */
 
 const products = [
-    {
-        id: 1,
-        name: "Keyboard",
-        category: "Computer",
-        price: 350000,
-        stock: 10,
-    },
-    {
-        id: 2,
-        name: "Mouse",
-        category: "Computer",
-        price: 150000,
-        stock: 0,
-    },
-    {
-        id: 3,
-        name: "Monitor",
-        category: "Computer",
-        price: 2500000,
-        stock: 5,
-    },
-    {
-        id: 4,
-        name: "Headset",
-        category: "Audio",
-        price: 450000,
-        stock: 8,
-    },
-    {
-        id: 5,
-        name: "Microphone",
-        category: "Audio",
-        price: 850000,
-        stock: 3,
-    },
+    {id: 1,name: "Keyboard",category: "Computer",price: 350000,stock: 10,},
+    {id: 2,name: "Mouse",category: "Computer",price: 150000,stock: 0,},
+    {id: 3,name: "Monitor",category: "Computer",price: 2500000,stock: 5,},
+    {id: 4,name: "Headset",category: "Audio",price: 450000,stock: 8,},
+    {id: 5,name: "Microphone",category: "Audio",price: 850000,stock: 3,},
 ];
+
+const availableProduct =  products.filter((p) => p.stock > 0)
+const unavailableProduct =  products.filter((p) => p.stock == 0)
+
+const productName = products.map((p) => p.name)
+const totalProduct = availableProduct.reduce((total, p)=> total += p.price,0)
+
+const sortPrices = availableProduct.sort((expensive,cheapest) => expensive.price - cheapest.price)
+
+
+console.log("== Product ==")
+console.log("available stock : "+availableProduct)
+console.log("unavailable stock : "+unavailableProduct)
+console.log("product name : "+productName)
+console.log("available product total : "+totalProduct)
+console.log("sort price : "+sortPrices)
