@@ -16,18 +16,19 @@ const products = [
     {id: 5,name: "Microphone",category: "Audio",price: 850000,stock: 3,},
 ];
 
-const availableProduct =  products.filter((p) => p.stock > 0)
-const unavailableProduct =  products.filter((p) => p.stock == 0)
 
 const productName = products.map((p) => p.name)
-const totalProduct = availableProduct.reduce((total, p)=> total += p.price,0)
 
+const availableProduct =  products.filter((p) => p.stock > 0 )
+const unAvailableProduct = products.filter((p) => p.stock === 0);
+
+const totalProduct = availableProduct.reduce((total, p)=> total + p.price,0)
 const sortPrices = availableProduct.sort((expensive,cheapest) => expensive.price - cheapest.price)
 
 
 console.log("== Product ==")
-console.log("available stock : "+availableProduct)
-console.log("unavailable stock : "+unavailableProduct)
-console.log("product name : "+productName)
-console.log("available product total : "+totalProduct)
-console.log("sort price : "+sortPrices)
+console.log("available stock :"+ availableProduct.map((a)=> a.name));
+console.log("unavailable stock :"+ unAvailableProduct.map((a)=> a.name));
+console.log("product name :"+ productName);
+console.log("available product total :"+ totalProduct);
+console.log("sort price :"+ sortPrices.map((s)=> s.price));

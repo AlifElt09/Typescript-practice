@@ -26,12 +26,26 @@
 type CustomerFormat = {
   CustomerName : string,
   PremiumMember : boolean,
+  roomAvailable : boolean
 }
 
 const CustomerRevervation : CustomerFormat = {
   CustomerName : "Nadia Putri",
   PremiumMember : true,
+  roomAvailable : false
 }
 
-const roomAvailable : boolean = false; 
 
+if (CustomerRevervation.roomAvailable === true) {
+  if (CustomerRevervation.PremiumMember === true) {
+    console.log("Room Upgrade");
+  } else {
+    console.log("Reserved Room");
+  }
+} else {
+  if (CustomerRevervation.PremiumMember === true) {
+    console.log("Priority Waiting List");
+  } else {
+    console.log("No Rooms Available");
+  }
+}

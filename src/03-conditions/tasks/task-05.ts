@@ -32,14 +32,28 @@
  *  - Implement the second screening only if the first screening is passed.
  *  - Display the correct result.
  */
+type Student = {
+    studentname: string;
+    gpa: number;
+    familyincome: number;
+    competitioncount: number;
+    hasdisciplinaryrecord: string;
+    documentcomplete: string;
+}
 
-const studentname = [
-    {studentname: "Fajar Hidayat",
+const students : Student[] = [
+    {
+    studentname: "Fajar Hidayat",
     gpa: 3.86,
     familyincome: 4200000,
     competitioncount: 4,
     hasdisciplinaryrecord: "No",
-    documentcomplete: "Yes"}
+    documentcomplete: "Yes"
+    }
 ]
+const ScholarshipRequirement = students[0].gpa >= 3.75 && students[0].familyincome < 5000000;
+const ScholarshipStatus = ScholarshipRequirement ? "Scholarship Approved" : "Passed First Screening, but Failed Second Screening";
+
+console.log(ScholarshipStatus);
 
 

@@ -56,6 +56,7 @@ type ORDER_STATUS = "PAID" | "UNPAID"
 type PaymentStatusOrder = Order & { status: ORDER_STATUS }
 type ShippingCategoryOrder = Order & { shippingStatus: SHIPPING_CATEGORY }
 
+
 function getPaymentStatus(selectedOrder: Order): PaymentStatusOrder {
     // implement to determine payment status order
     // this function return order data within status or order

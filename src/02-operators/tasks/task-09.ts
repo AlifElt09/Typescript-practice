@@ -34,3 +34,10 @@
  * - Free shipping eligibility
 
  */
+
+type Product = {
+  name: string;
+  price: number;
+  quantity: number;
+};
+

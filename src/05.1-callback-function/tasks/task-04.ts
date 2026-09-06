@@ -20,3 +20,33 @@ const scores = [92, 68, 84, 73, 95, 61, 88];
  * 
  * Instead of creating four separate loops, create a reusable function that receives a callback responsible for transforming a score.
  */
+
+function showGrade(score: number) {
+  let grade = `D`;
+  if (score >= 90) grade = `A`;
+  if (score >= 80 && score < 90) grade = `B`;
+  if (score >= 70 && score < 80) grade = `C`;
+  console.log(`Grade for ${score} is ${grade}`);
+}
+
+function showScore(score: number) {
+  console.log(`Score : ${score}`);
+}
+
+function showExcellent(score: number) {
+  if (score > 90) {
+    console.log(`${score} → Excellent`);
+  } else {
+    console.log(`${score} → Reguler`);
+  }
+}
+
+function processScores(scores: number[], callback: (score: number) => void) {
+  for (const score of scores) {
+    callback(score);
+  }
+}
+
+processScores(scores, showScore);
+processScores(scores, showGrade);
+processScores(scores, showExcellent);
