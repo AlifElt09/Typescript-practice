@@ -37,5 +37,3 @@ console.log(cat.speak());   // expected: "Whiskers says: Meow!"
 console.log(car.getInfo()); // expected: "Toyota Camry"
 console.log(car.getBrand()); // expected: "Toyota"
 */
-
-console.log("Complete the TODOs above, then uncomment the test code.");
