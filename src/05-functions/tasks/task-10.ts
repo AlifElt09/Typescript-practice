@@ -119,10 +119,7 @@ function averageScoreForEachCourse(
   for (const course in courseScores) {
     const scores = courseScores[course];
 
-    averages[course] =
-      scores.reduce((total, score) => total + score, 0) / scores.length;
   }
-
   return averages;
 }
 

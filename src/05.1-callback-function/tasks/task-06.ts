@@ -41,6 +41,7 @@ const employees: Employee[] = [
 
 function calculateFinalSalary(selectedEmployee: Employee): EMPLOYEE_BONUS {
     // implementation: this function return employee data with bonus and updated final salary
+    
     return;
 }
 function getPerformanceStatus(selectedEmployee: Employee): EMPLOYEE_PERFORMANCE {

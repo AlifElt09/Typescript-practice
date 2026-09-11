@@ -29,3 +29,43 @@
  *   - isAvailable()
  * - implement class with at least 2 objects
  */
+
+class Book {
+    constructor (
+        private status: string,
+        private isbn: string,
+        private title: string,
+        private author: string,
+        private totalPages: number
+    ) { }
+    
+    borrow() {
+        if (this.status === "available") {
+            this.status = "borrowed";
+        }}
+    returnBook() {
+        if (this.status === "borrowed") {
+            this.status = "available";
+        }}
+    showInfo() {
+        console.log(`ISBN: ${this.isbn}`);
+        console.log(`Title: ${this.title}`);
+        console.log(`Author: ${this.author}`);
+        console.log(`Total Pages: ${this.totalPages}`);
+        console.log(`Status: ${this.status}`);
+    }
+    isAvailable() {
+        return this.status === "available";
+    }
+}
+
+const book1 = new Book("borrowed", "book1", "IT Guide", "SMK Telkom Malang", 67);
+const book2 = new Book("available", "book2", "Typescript Guide", "SMK Telkom Malang", 67);
+
+book1.borrow();
+book1.showInfo();
+book2.returnBook();
+book2.showInfo();
+
+console.log(book1.isAvailable());
+console.log(book2.isAvailable());
