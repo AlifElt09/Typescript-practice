@@ -1,8 +1,14 @@
 /**
  * A company has a simple data-processing engine used to analyze transaction records.
  */
+type Transaction = {
+    id: string;
+    customer: string;
+    amount: number;
+    status: "paid" | "pending" | "cancelled";
+};
 
-const transactions = [
+const transactions : Transaction[] = [
     {
         id: "TRX001",
         customer: "Alya",
@@ -46,3 +52,9 @@ const transactions = [
  *   - Pending transactions → 1%
  *   - Cancelled transactions → 0%
  */
+
+function extractCustomerNames(transactions: Transaction[]): string[] {
+    const customerNames = transactions.map((transaction) => transaction.customer);
+    return customerNames;
+}
+

@@ -11,7 +11,14 @@
  * Complete following functions!
  */
 
-const students = [
+
+type Student = {
+  name: string;
+  major: string;
+  active: boolean;
+};
+
+const students: Student[] = [
   {
     name: "Alya",
     major: "Software Engineering",
@@ -39,18 +46,28 @@ const students = [
   }
 ];
 
-function countActiveStudents(...){
-
+function countActiveStudents(students: Student[]): number {
+  return students.filter((student) => student.active).length;
 }
 
-function countInactiveStudents(...){
-
+function countInactiveStudents(students: Student[]): number {
+  return students.filter((student) => !student.active).length;
 }
 
-function countStudentsByMajor(...){
-
+function countStudentsByMajor(
+  students: Student[],
+  major: string
+): number {
+  return students.filter((student) => student.major === major).length;
 }
 
-function printEnrollmentReport(...){
-    
+function printEnrollmentReport(students: Student[]): void {
+  console.log(`Total students: ${students.length}`);
+  console.log(`Active students: ${countActiveStudents(students)}`);
+  console.log(`Inactive students: ${countInactiveStudents(students)}`);
+  console.log(`Software Engineering students: ${countStudentsByMajor(students,"Software Engineering")}`);
+  console.log(`Networking students: ${countStudentsByMajor(students,"Networking")}`);
+  console.log(`Multimedia students: ${countStudentsByMajor(students,"Multimedia")}`);
 }
+
+printEnrollmentReport(students);
