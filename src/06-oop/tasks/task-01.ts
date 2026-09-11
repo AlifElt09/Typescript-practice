@@ -29,21 +29,19 @@
  * Then create at least three student objects.
  */
 
-class Student { 
-    constructor (
-    public studentId: string, 
-    public name: string, 
-    private age: number,
-    public major: string,
-    public grade: number
-    ){ 
-        this.studentId = this.studentId;
-        this.name = this.name;
-        this.age = this.age;
-        this.major = this.major;
-        this.grade = this.grade;
+class Student {
+    studentId: string;
+    name: string;
+    age: number;
+    major: string;
+    grade: number;
+    constructor(studentId: string, name: string, age: number, major: string, grade: number) {
+        this.studentId = studentId;
+        this.name = name;
+        this.age = age;
+        this.major = major;
+        this.grade = grade;
     }
-
     showProfile (): void {
         console.log(`Student ID: ${this.studentId}`);
         console.log(`Name: ${this.name}`);
