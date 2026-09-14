@@ -72,10 +72,6 @@ class Product {
     }
 }
 
-
-
-
-
 const laptop = new Product(
     "PRD001",
     "Gaming Laptop",
@@ -84,11 +80,8 @@ const laptop = new Product(
 );
 
 laptop.addStock(5);
-
 laptop.removeStock(3);
-
 laptop.changePrice(14500000);
 
 console.log(laptop.isAvailable());
-
 console.log(laptop.getInventoryValue());

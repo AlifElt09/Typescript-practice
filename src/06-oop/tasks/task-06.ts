@@ -40,6 +40,39 @@ class Person {
     ) { }
 
     showInfo(): void {
-        console.log(`${this.name}, ${this.age} years old`);
+        console.log(`Their name is ${this.name},and they are ${this.age} years old`);
     }
 }
+class Student extends Person {
+    constructor(
+        public studentId: string,
+        public grade: number,
+        name: string,
+        age: number
+    ) {
+        super(name, age);
+    }
+    showInfo(): void {
+      console.log(`The ${this.studentId} name is ${this.name},they are ${this.grade} grade`)
+    }
+}
+class Teacher extends Person {
+    constructor(
+        public employeeId : string,
+        public subject : string,
+        name : string,
+        age : number
+    ) {
+      super(name, age)
+    }
+    showInfo(): void {
+      console.log(`The ${this.employeeId} is ${this.name},their main subject is ${this.subject}`)
+    }
+}
+const npc = new Person ("Npc", 0)
+const student = new Student ("ST001", 11, "Mas Messi RPL", 17 )
+const teacher = new Teacher ("STK001", "RPL Fundamental", "Mafia ronaldo", 38 )
+
+npc.showInfo()
+student.showInfo()
+teacher.showInfo()

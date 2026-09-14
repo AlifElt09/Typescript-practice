@@ -79,7 +79,5 @@ const employee = new Employee(
     12000000
 );
 
-
 employee.addBonus(2000000);
-
 employee.showProfile();
